@@ -1,3 +1,5 @@
+package Peaks;
+
 import java.util.Scanner;
 
 public class Peaks_Subtask4 {

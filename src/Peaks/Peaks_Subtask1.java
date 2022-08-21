@@ -1,3 +1,5 @@
+package Peaks;
+
 import java.util.*;
 
 public class Peaks_Subtask1 {
