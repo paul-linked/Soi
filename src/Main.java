@@ -1,4 +1,5 @@
 import Ropeways.Ropeways_Subtask1;
+import T_Shirts.TShirts_Subtask3;
 import T_Shirts.TShirts_subtask1;
 
 public class Main {
@@ -15,5 +16,8 @@ public class Main {
 
 //        TShirts_subtask1 st1 = new TShirts_subtask1();
 //        st1.runApp();
+
+        TShirts_Subtask3 st3 = new TShirts_Subtask3();
+        st3.runApp();
     }
 }
