@@ -21,37 +21,42 @@ public class Claw_SubTask2 {
 
             int armPos = 0;
             int armHold = -1;
-            while ((!(cards[0] < cards[1]) || !(cards[1] < cards[2])) || armPos != -1) {
-                if (armPos == 0) {
-                    operators.add(">");
-                    int temp = cards[0];
-                    cards[0] = armHold;
-                    armHold = temp;
-                    armPos++;
-                } else if (armPos == 2) {
-                    operators.add("<");
-                    int temp = cards[2];
-                    cards[2] = armHold;
-                    armHold = temp;
-                    armPos--;
-                }
-                else {
-                    if (cards[1] > cards[2]) {
+
+            while (true) {
+                if ((cards[0] > cards[1] || cards[1] > cards[2] || armPos != -1)) {
+                    if (armPos == 0) {
                         operators.add(">");
-                        int temp = cards[1];
-                        cards[1] = armHold;
+                        int temp = cards[0];
+                        cards[0] = armHold;
                         armHold = temp;
                         armPos++;
-                    }
-                    else {
+                    } else if (armPos == 2) {
                         operators.add("<");
-                        int temp = cards[1];
-                        cards[1] = armHold;
+                        int temp = cards[2];
+                        cards[2] = armHold;
                         armHold = temp;
                         armPos--;
+                    } else {
+                        if (cards[1] > cards[2]) {
+                            operators.add(">");
+                            int temp = cards[1];
+                            cards[1] = armHold;
+                            armHold = temp;
+                            armPos++;
+                        } else {
+                            operators.add("<");
+                            int temp = cards[1];
+                            cards[1] = armHold;
+                            armHold = temp;
+                            armPos--;
+                        }
                     }
+
+                } else {
+                    break;
                 }
             }
+
 //            operators.toString();
             System.out.print("Case #" + i + ":");
             System.out.println(operators);
