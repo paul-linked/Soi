@@ -1,11 +1,31 @@
 package T_Shirts;
 
+
+import java.io.*;
+import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class TShirts_Subtask3 {
+public class TShirts_Subtask3 {     // ONLY WORKS FOR SUBTASK 4 OOPS
     public void runApp() {
-    Scanner sc = new Scanner(System.in);
-    int runs = sc.nextInt();
+
+        PrintWriter writeMe = null;
+        try {
+            writeMe = new PrintWriter(new File("C:\\Users\\admin\\OneDrive\\Desktop\\code\\output.txt"));
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }   //create answer file
+
+        File input = new File("C:\\Users\\admin\\OneDrive\\Desktop\\code\\tshirts-sub5-upsolve-attempt0.txt");
+        Scanner sc = null;
+        try {
+            sc = new Scanner(input);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }   //read file
+
+
+        int runs = sc.nextInt();
 
     for (int i = 0; i < runs; i++) {
 
@@ -27,7 +47,7 @@ public class TShirts_Subtask3 {
 
         for (int j = 0; j < numPeople; j++) {
             for (int k = j+1; k < numPeople; k++) {
-                if (people[0][j] > people[0][k]) {
+                if (people[0][j] > people[0][j+1]) {
                     int tempMin = people[0][j];
                     int tempMax = people[1][j];
                     people[0][j] = people[0][k];
@@ -39,36 +59,29 @@ public class TShirts_Subtask3 {
         }   //Sort peoples min ascending
 
 
-        for (int j = 0; j < numShirts; j++) {
-            for (int k = j + 1; k < numShirts; k++) {
-                if (shirtSizes[j] > shirtSizes[k]) {
-                    int temp = shirtSizes[j];
-                    shirtSizes[j] = shirtSizes[k];
-                    shirtSizes[k] = temp;
-                }
-            }
-        }   //Sort shirts ascending
+        Arrays.sort(shirtSizes);   //Sort shirts ascending
 
 
         int counter = 0;
         int posShirt = 0;
-        for (int j = 0; j < numPeople; j++) {
-            if (numPeople > posShirt) {
-                if (people[0][j] <= shirtSizes[posShirt]) {
+        for (int j = 0; j < numPeople && j < numShirts; j++) {
+
+                if (people[0][j] <= shirtSizes[posShirt] && people[1][j] >= shirtSizes[posShirt]) {
                     counter++;
                     posShirt++;
                 } else {
                     for (int k = posShirt; k < numShirts; k++) {
-                        if (people[0][j] <= shirtSizes[k]) {
+                        if (people[0][j] <= shirtSizes[k] && people[1][j] >= shirtSizes[posShirt]) {
                             counter++;
                             posShirt++;
                             k = numShirts;
                         }
                     }
                 }
-            }
-        }
+            }   //Count shirts
 
+
+        writeMe.println("Case #"+i+": "+counter);
         System.out.println("Case #"+i+": "+counter);
 
 
@@ -78,5 +91,6 @@ public class TShirts_Subtask3 {
 
     }
 
+writeMe.close();
 } }
 
