@@ -11,12 +11,12 @@ public class TShirts_Subtask3 {     // ONLY WORKS FOR SUBTASK 4 OOPS
 
         PrintWriter writeMe = null;
         try {
-            writeMe = new PrintWriter(new File("C:\\Users\\admin\\OneDrive\\Desktop\\code\\output.txt"));
+            writeMe = new PrintWriter(new File("C:\\Users\\plundberg\\Desktop\\SOI\\tshirts\\output.txt"));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }   //create answer file
 
-        File input = new File("C:\\Users\\admin\\OneDrive\\Desktop\\code\\tshirts-sub5-upsolve-attempt0.txt");
+        File input = new File("C:\\Users\\plundberg\\Desktop\\SOI\\tshirts\\tshirts-sub3-upsolve-attempt0.txt");
         Scanner sc = null;
         try {
             sc = new Scanner(input);

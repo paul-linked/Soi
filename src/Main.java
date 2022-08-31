@@ -18,14 +18,14 @@ public class Main {
 
 //        TShirts_subtask1 st1 = new TShirts_subtask1();
 //        st1.runApp();
-
+//
 //        TShirts_Subtask3 st3 = new TShirts_Subtask3();
 //        st3.runApp();
 
 //        Claw_subTask1 st1 = new Claw_subTask1();
 //        st1.runApp();
 
-        Claw_SubTask2 st2 = new Claw_SubTask2();
-        st2.runApp();
+//        Claw_SubTask2 st2 = new Claw_SubTask2();
+//        st2.runApp();
     }
 }

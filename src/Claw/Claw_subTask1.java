@@ -9,12 +9,12 @@ public class Claw_subTask1 {
     public void runApp() {
         PrintWriter writeMe = null;
         try {
-            writeMe = new PrintWriter(new File("C:\\Users\\admin\\OneDrive\\Desktop\\code\\SOI\\Claw\\output.txt"));
+            writeMe = new PrintWriter(new File("C:\\Users\\plundberg\\Desktop\\SOI\\Claw\\output.txt"));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }   //create answer file
 
-        File input = new File("C:\\Users\\admin\\OneDrive\\Desktop\\code\\SOI\\Claw\\clawsort-sub1-upsolve-attempt0.txt");
+        File input = new File("C:\\Users\\plundberg\\Desktop\\SOI\\Claw\\tshirts-sub4-upsolve-attempt2.txt");
         Scanner sc = null;
         try {
             sc = new Scanner(input);
