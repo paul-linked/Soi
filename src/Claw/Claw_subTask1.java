@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Claw_subTask1 {
+public class Claw_subTask1 { //passed all tests
     public void runApp() {
         PrintWriter writeMe = null;
         try {
@@ -14,7 +14,7 @@ public class Claw_subTask1 {
             throw new RuntimeException(e);
         }   //create answer file
 
-        File input = new File("C:\\Users\\plundberg\\Desktop\\SOI\\Claw\\tshirts-sub4-upsolve-attempt2.txt");
+        File input = new File("C:\\Users\\plundberg\\Desktop\\SOI\\Claw\\clawsort-sub1-upsolve-attempt0.txt");
         Scanner sc = null;
         try {
             sc = new Scanner(input);
