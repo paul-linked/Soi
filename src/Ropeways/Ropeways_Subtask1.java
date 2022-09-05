@@ -15,7 +15,7 @@ public class Ropeways_Subtask1 {
             throw new RuntimeException(e);
         }   //create answer file
 
-        File input = new File("C:\\Users\\plundberg\\Desktop\\SOI\\ropeways\\ropeways-sub1-upsolve-attempt0.txt");
+        File input = new File("C:\\Users\\plundberg\\Desktop\\SOI\\ropeways\\ropeways-sub1-upsolve-attempt3.txt");
         Scanner sc = null;
         try {
             sc = new Scanner(input);
@@ -39,6 +39,7 @@ public class Ropeways_Subtask1 {
 
 
             int[] boringCounter = new int[islands];
+
             boringCounter[0]=0;
 
             for (int j = 1; j < islands; j++) {
@@ -46,7 +47,7 @@ public class Ropeways_Subtask1 {
                 for (int k = j-ropeLength; k < j; k++) {
                     if (k<0){continue;}
                     int thing = boringCounter[k];
-                    if (heights[k]<heights[j]){thing++;}
+                    if (heights[k]<=heights[j]){thing++;}
                     mini = Math.min(mini, thing); // take smaller value
                 }
                 boringCounter[j]=mini;
