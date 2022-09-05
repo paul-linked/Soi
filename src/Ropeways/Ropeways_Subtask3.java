@@ -1,11 +1,12 @@
 package Ropeways;
 
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Ropeways_Subtask2 {
+public class Ropeways_Subtask3 {
     public void runApp() {
 
         PrintWriter writeMe = null;
@@ -15,7 +16,7 @@ public class Ropeways_Subtask2 {
             throw new RuntimeException(e);
         }   //create answer file
 
-        File input = new File("C:\\Users\\admin\\OneDrive\\Desktop\\code\\SOI\\rope\\ropeways-sub2-upsolve-attempt1.txt");
+        File input = new File("C:\\Users\\admin\\OneDrive\\Desktop\\code\\SOI\\rope\\ropeways-sub3-upsolve-attempt0.txt");
         Scanner sc = null;
         try {
             sc = new Scanner(input);

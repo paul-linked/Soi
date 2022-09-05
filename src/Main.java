@@ -3,6 +3,7 @@ import Claw.Claw_subTask1;
 import Peaks.Peaks_Subtask4;
 import Ropeways.Ropeways_Subtask1;
 import Ropeways.Ropeways_Subtask2;
+import Ropeways.Ropeways_Subtask3;
 import T_Shirts.TShirts_Subtask3;
 import T_Shirts.TShirts_subtask1;
 
@@ -18,8 +19,11 @@ public class Main {
 //        Ropeways_Subtask1 st1 = new Ropeways_Subtask1();
 //        st1.runApp();
 
-        Ropeways_Subtask2 st2 = new Ropeways_Subtask2();
-        st2.runApp();
+//        Ropeways_Subtask2 st2 = new Ropeways_Subtask2();
+//        st2.runApp();
+
+        Ropeways_Subtask3 st3 = new Ropeways_Subtask3();
+        st3.runApp();
 
 //        TShirts_subtask1 st1 = new TShirts_subtask1();
 //        st1.runApp();
