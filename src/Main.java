@@ -22,8 +22,8 @@ public class Main {
 //        Ropeways_Subtask2 st2 = new Ropeways_Subtask2();
 //        st2.runApp();
 
-        Ropeways_Subtask3 st3 = new Ropeways_Subtask3();
-        st3.runApp();
+//        Ropeways_Subtask3 st3 = new Ropeways_Subtask3();
+//        st3.runApp();
 
 //        TShirts_subtask1 st1 = new TShirts_subtask1();
 //        st1.runApp();
