@@ -1,5 +1,6 @@
 import Claw.Claw_SubTask2;
 import Claw.Claw_subTask1;
+import Dancing.Dancing_SubTask1;
 import Peaks.Peaks_Subtask4;
 import Ropeways.Ropeways_Subtask1;
 import Ropeways.Ropeways_Subtask2;
@@ -36,5 +37,8 @@ public class Main {
 
 //        Claw_SubTask2 st2 = new Claw_SubTask2();
 //        st2.runApp();
+
+        Dancing_SubTask1 st1 = new Dancing_SubTask1();
+        st1.runApp();
     }
 }
