@@ -38,7 +38,7 @@ public class Main {
 //        Claw_SubTask2 st2 = new Claw_SubTask2();
 //        st2.runApp();
 
-        Dancing_SubTask1 st1 = new Dancing_SubTask1();
-        st1.runApp();
+//        Dancing_SubTask1 st1 = new Dancing_SubTask1();
+//        st1.runApp();
     }
 }
